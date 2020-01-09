@@ -1,7 +1,7 @@
 *, *::after, *::before{
   box-sizing: border-box;
   font-family: Gotham Rounded, sans-serif;
-  position : static;
+  overflow : scroll;
 }
 body{
   background: linear-gradient(to right, hs1(200,100%,50%), hs1(175,100%,50%));
