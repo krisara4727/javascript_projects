@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bouncing Ball</title>
+  <script defer src="script.js"></script>
+<style>
+  body{
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-size:400% 400%;
+animation: change 10s ease-in-out infinite;
+overflow:hidden;
+  }
+  @keyframes change{
+    0%{
+      background-position:0 50%;
+    }
+    50%{
+      background-position:100% 50%;
+    }
+    100%{
+      background-position:0 50%;
+    }
+  }
+  </style>
+
+
+
+
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+
+</body>
+</html>
