@@ -35,7 +35,6 @@ function randomColor() {
 
 function Ball() {
   this.color = randomColor();
-  this.color2 = randomColor();
   this.radius = Math.random() * 20 + 14;
   this.startradius = this.radius;
   this.x = Math.random() * (tx - this.radius * 2) + this.radius;
@@ -46,13 +45,10 @@ function Ball() {
   this.update = function() {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    //c.fillRect((3/2)*this.x,this.y,this.radius,this.radius);
+    c.fillRect((3/2)*this.x,this.y,this.radius,this.radius);
     c.fillStyle = this.color;
     c.fill();
     //c.stroke();
-    c.fillStyle=this.color2;
-    c.textAlign="center";
-    c.fillText('shanoo',this.x,this.y);
   };
 }
 
